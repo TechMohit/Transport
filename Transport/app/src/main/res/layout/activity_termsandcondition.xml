@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Termsandcondition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_shapeterms">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true">
+
+
+                    <TextView
+                        android:id="@+id/termsofuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms Of Use"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"/>
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/termsofuse"
+                   android:layout_marginLeft="50dp"
+                    android:background="@drawable/term__1_" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Terms of Use"
+               android:layout_margin="10dp"
+               android:textSize="20dp"
+               android:textColor="@color/colorPrimaryDark"
+               />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This Mobile App is only meant for transport information to the citizen, while all efforts have been made to make data / information in this App as authentic as possible, the Ministry of Road, Transport and highways,or writer or publisher will not be responsible for any loss to by any person /entity / organization etc caused by any shortcoming,defect or in accuracy in the information available in this App. As such, it has been arrived at on the basis of various sources and experiences from day to day life. ; "
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+             />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Ministry of Road, Transport and Highways, reserves all the copyrights of this Mobile App. Modification or repacking of this application is illegal and thus no modifies copies of the app shall be distributed without permission of the ministry concerned."
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The information in this App cannot be treated as a legal document. The information contained in this App has been prepared solely for the purpose of providing general information. No claim is made or warranty given either express or implied as to the completeness or accuracy of the information it contains. This information cannot be used as evidence at any forum."
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

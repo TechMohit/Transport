@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Transport</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="forgotpswd">Forgot Password ?</string>
+    <string name="dialog_title">Would you like to logout?</string>
+    <string name="dialog_text">Would you like to logout?</string>
+</resources>
