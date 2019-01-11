@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     View hview;
     ImageView img_background;
     RelativeLayout tenrules;
+    RelativeLayout test;
     EditText ed_searchview;
     Menu nav_Menu;
     Vibrator vibe;
