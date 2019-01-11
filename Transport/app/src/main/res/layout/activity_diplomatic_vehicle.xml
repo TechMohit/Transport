@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffecf9fe"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:transitionName="logo" />
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Diplomatic Vehicles"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffecf9fe"
+        android:layout_margin="10dp"
+        android:layout_below="@id/tool">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffecf9fe"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffecf9fe"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="About"/>
+
+                <TextView
+                    android:id="@+id/textcont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textSize="@dimen/sp15"
+                    android:text="A diplomatic officer or consular officer, as recognized by the Central Government, shall have special provision for registration of motor vehicles where the registering authority shall register the vehicle in such manner and shall assign to the vehicle for display thereon a special registration mark in accordance with the provisions contained in those rules and shall issue a certificate of registrationthat the vehicle has been registered under this section; and any vehicle so registered under this section. If any vehicle registered under this section ceases to be the property of any diplomatic officer or consular officer, the certificate of registration issued under this section shall also cease to be effective."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Guidelines"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Every application for registration of a motor vehicle under on behalf of any diplomatic officer or consular officer shall be made in triplicate by the head of the mission or consular officer in Form 42 and be addressed to the registering authority through the Competent Authority."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Pay appropriate fee and tax as specified in rule 81 of the Central Motor Vehicle Rules 1989."/>
+                </LinearLayout>
+
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Documents Required"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Application in"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="16sp"
+                        android:textColor="#ff0176a6"
+                        android:textStyle="bold"
+                        android:text="Form 42 "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Road worthiness certificate in Form 22 from the manufacturers (Form 22A from the Body builder)."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="Proof of address (Ration card, Electricity bill etc.)."
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="d."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="Valid insurance certificate*."
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="e."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="Pollution under control certificate*."
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="f."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="Design approval copy of STA in case Trailer or Semi-Trailer."
+                        android:textSize="@dimen/sp15" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="g."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="15sp"
+                        android:text="Original sales certificate from the concerned authorities in Form 21 in the case of ex-army vehicle."
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="h."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="15sp"
+                        android:text="Custom's clearance certificate along with licence, and bond in case of imported vehicle."
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="i."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Temporary registration, if any"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Reference"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="The Motor Vehicles Act 1988 (Section 42 of Chapter IV)."/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="The Central Motor Vehicles Rules 1989 (Rule 76)."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="State transport official websites"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#e72f0f"
+                    android:textSize="15sp"
+
+                    android:text="Documents marked with asterisk (*) may be required in some states."/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,6 +1,7 @@
 package cms.co.in.transport;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,11 +52,80 @@ public class Recyclerviewrcadapter extends RecyclerView.Adapter<Recyclerviewrcad
             public void onClick(View v) {
 
                 if(position==0){
+                    // Toast.makeText(mcontext,"clicked", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), TemporaryReg.class);
+                    v.getContext().startActivity(intent);
 
-                    Toast.makeText(mcontext,"clicked", Toast.LENGTH_SHORT).show();
+                    }
 
+                if(position==1){
+                   // Toast.makeText(mcontext,"clicked1", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), PermanentReg.class);
+                    v.getContext().startActivity(intent);
 
+                }
+                if(position==2){
+                    //Toast.makeText(mcontext,"clicked2", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), Renewalrc.class);
+                    v.getContext().startActivity(intent);
 
+                }
+                if(position==3){
+                   // Toast.makeText(mcontext,"clicked3", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), DuplicateRc.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==4){
+                   // Toast.makeText(mcontext,"clicked4", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), NoObjectionCertificate.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==5){
+                   // Toast.makeText(mcontext,"clicked5", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), HpEndrosement.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==6){
+                    //Toast.makeText(mcontext,"clicked6", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), HpTermination.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==7){
+                    //Toast.makeText(mcontext,"clicked6", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), AddressChange.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==8){
+                    //Toast.makeText(mcontext,"clicked7", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), Reassinment.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==9){
+                  //  Toast.makeText(mcontext,"clicked9", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), TradeCertificate.class);
+                    v.getContext().startActivity(intent);
+
+                }if(position==10){
+                  //  Toast.makeText(mcontext,"clicked10", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), CertificateIssuses.class);
+                    v.getContext().startActivity(intent);
+
+                }if(position==11){
+                   // Toast.makeText(mcontext,"clicked11", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), OwnershipTransfer.class);
+                    v.getContext().startActivity(intent);
+
+                }
+                if(position==12){
+                    //Toast.makeText(mcontext,"clicked12", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), DiplomaticVehicle.class);
+                    v.getContext().startActivity(intent);
 
                 }
 

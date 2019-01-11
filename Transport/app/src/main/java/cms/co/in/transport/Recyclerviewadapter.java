@@ -52,7 +52,7 @@ public class Recyclerviewadapter extends RecyclerView.Adapter<Recyclerviewadapte
 
                 if(position==0){
 
-                    Toast.makeText(mcontext,"clicked", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(mcontext,"clicked", Toast.LENGTH_SHORT).show();
 
 
 

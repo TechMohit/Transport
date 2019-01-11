@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffecf9fe"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:transitionName="logo" />
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Ownership Transfer"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffecf9fe"
+        android:layout_margin="10dp"
+        android:layout_below="@id/tool">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffecf9fe"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffecf9fe"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="About"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="1."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Transfer of ownership in case of normal sale"/>"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textcont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:textSize="@dimen/sp15"
+                    android:text="When a vehicle is sold, the name of the purchaser is noted as the registered owner in place of the previous registered owner and the process is known as transfer of ownership."/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="2."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership on death of owner of the vehicle"/>"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:textSize="@dimen/sp15"
+                    android:text="When the registered owner of a vehicle dies, transfer of ownership is affected in favour of the legal heirs of the deceased registered owner. Where the owner ofa motor vehicle dies, the person succeeding to the possession of the vehicle may for a period of three months, use the vehicle as if it has been transferred to him where such person has, within thirty days of the death of the owner informs the registering authority of the occurrence of the death of the owner and of his own intention to use the vehicle"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="3."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership of vehicle purchased in public auction "/>"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:textSize="@dimen/sp15"
+                    android:text="When a vehicle is sold in public auction, the name of the purchaser is noted as the registered owner in place of the previous registered owner and the process is known as transfer of ownership on auction."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Guidelines"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="1."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership in case of normal sale"/>"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Where the ownership of a motor vehicle is transferred, the transferor shall report the fact of transfer in Form 29 to the registering authorities concerned in whose jurisdiction the transferor and the transferee reside or have their places of business."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="in the case of a vehicle registered within the same State, within fourteen days of the transfer, application for the transfer of ownership of a motor vehicle shall be made by the transferee in Form 30 to the registering authorities, and shall be accompanied by set of forms given below under Form I."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="in the case of a vehicle registered outside the State, within forty-five days of the transfer, application for the transfer of ownership of a motor vehicle shall be made by the transferee in Form 30 to the registering authorities, and shall be accompanied by set of forms given below under Form I and Form II."></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="d."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Pay appropriate fee and tax as specified in rule 81 of the Central Motor Vehicle Rules 1989."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="2."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership on death of owner of the vehicle"/>"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Apply in Form 31 within the period of three months to the registering authority for the transfer of ownership of the vehicle in your name."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Pay appropriate fee and tax as specified in rule 81 of the Central Motor Vehicle Rules 1989."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="3."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership of vehicle purchased in public auction"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="The person who has acquired or purchased a motor vehicle at a public auction conducted by or on behalf of the Central Government or a State Government shall apply in Form 32 within thirty days of taking possession of the vehicle to the registering authority."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Pay appropriate fee and tax as specified in rule 81 of the Central Motor Vehicle Rules 1989."/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Documents Required"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="1."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Transfer of ownership in case of normal sale"/>
+            </LinearLayout>
+
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="16sp"
+                        android:textColor="#ff0176a6"
+                        android:textStyle="bold"
+                        android:text="Form 29"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="16sp"
+                        android:textColor="#ff0176a6"
+                        android:textStyle="bold"
+                        android:text="Form 30"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Form I"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of registration"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of insurance."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of pollution under control*."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="d."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="PAN card (seller and purchaser) or Form 60*."/>
+                </LinearLayout><LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="e."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Chassis and Engine Pencil Print*."/>
+                </LinearLayout><LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="f."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Proof of Date of Birth of purchaser*."/>
+                </LinearLayout><LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="g."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Proof of address*."/>
+                </LinearLayout><LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="h."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="R.C. Book."/>
+                </LinearLayout><LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="i."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Purchaser's undertaking*."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="j."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Tax clearance certificate*."/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Form II"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="a no objection certificate granted by the registering authority"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="an order of the registering authority refusing to grant the no objection certificate; or"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="where the no objection certificate or the order, as the case may be, has not been received, a declaration by the transferor that he has not received any such communication together with."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp35"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="The receipt obtained from the registering authority; or"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp35"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="The postal acknowledgement received from the registering authority where the application for no objection certificate has been sent by post."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="2."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership on death of owner of the vehicle."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of registration"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of insurance."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#ff0176a6"
+                       android:textStyle="bold"
+                        android:text="Form 31."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="d."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Death certificate in relation to the registered owner."/>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="e."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Chassis and Engine Pencil Print*."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="f."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Proof of Date of Birth of successor*."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="g."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Proof of address*."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="h."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="R.C. Book."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="i."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Certificate of pollution under control*."/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="j."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Declaration by the applicant and all other Legal Heirs of the deceased*."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="k."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Verification of vehicle on Form 20*"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="l."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Passport size photograph*."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="m."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Proof of succession*"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="n."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Signature Identification of Seller*."/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="3."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Transfer of ownership of vehicle purchased in public auction."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of registration"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate of insurance."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#ff0176a6"
+                        android:textStyle="bold"
+                        android:text="Form 32."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="d."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certificate or order confirming the sale of the vehicle in his favour duly signed by the person authorised to conduct the auction; and."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="e."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Chassis and Engine Pencil Print*."/>
+                </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="f."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Proof of Date of Birth of purchaser*."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="g."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Proof of address*."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="h."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="R.C. Book."/>
+            </LinearLayout><LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textSize="@dimen/sp15"
+                    android:text="i."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp15"
+                    android:text="Certificate of pollution under control*."/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="j."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Certified copy of the order of the Central Government or State Government authorising the auction of the vehicle."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="k."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Passport size photograph*"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="l."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="PAN card (seller and purchaser) or Form 60*."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="m."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="Proof of succession*"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ff0176a6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Reference"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="a."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="The Motor Vehicles Act 1988 (Section 50 of Chapter IV)."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="b."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="The Central Motor Vehicles Rules 1989 (Rule 55, 56, 57)."/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:textSize="@dimen/sp15"
+                        android:text="c."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:textSize="@dimen/sp15"
+                        android:text="State transport official websites"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#e72f0f"
+                    android:textSize="15sp"
+
+                    android:text="Documents marked with asterisk (*) may be required in some states."/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

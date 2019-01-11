@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cms.co.in.transport">
+
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/car__3_"
+        android:icon="@drawable/goblogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Signinactivity" />
+        <activity android:name=".Searchbardetails" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Signinactivity" />
-        <activity android:name=".Searchbardetails" />
-        <activity android:name=".Splash" />
         <activity
             android:name=".IntroActivity"
             android:theme="@style/Theme.Intro" />
         <activity android:name=".Signup" />
         <activity android:name=".Donesuccesfully" />
         <activity android:name=".Termsandcondition" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".Learnerdldetail" />
+        <activity android:name=".Permanentdldetail" />
+        <activity android:name=".Reneewabledl" />
+        <activity android:name=".Duplicatedl" />
+        <activity android:name=".AdditionOfClass" />
+        <activity android:name=".InternationalDrivingpermit" />
+        <activity android:name=".TemporaryReg" />
+        <activity android:name=".PermanentReg" />
+        <activity android:name=".Renewalrc" />
+        <activity android:name=".DuplicateRc" />
+        <activity android:name=".NoObjectionCertificate" />
+        <activity android:name=".HpEndrosement" />
+        <activity android:name=".HpTermination" />
+        <activity android:name=".AddressChange" />
+        <activity android:name=".Reassinment" />
+        <activity android:name=".TradeCertificate" />
+        <activity android:name=".CertificateIssuses" />
+        <activity android:name=".OwnershipTransfer" />
+        <activity android:name=".DiplomaticVehicle"></activity>
     </application>
 
 </manifest>

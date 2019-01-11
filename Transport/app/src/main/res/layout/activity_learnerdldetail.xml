@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffecf9fe"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:transitionName="logo" />
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Learner's DL"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffecf9fe"
+        android:layout_margin="10dp"
+        android:layout_below="@id/tool">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffecf9fe"
+            android:scrollbars="none">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#ffecf9fe"
+           android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="#ff0176a6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Learner's License"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="#ff0176a6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Need for a Driving Licence"/>
+
+        <TextView
+            android:id="@+id/textcont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp15"
+            android:text="@string/content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="#ff0176a6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Licensing Authorities"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/sp15"
+            android:text="@string/La_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="#ff0176a6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Age limit to obtain Driving Licence"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="@dimen/sp15"
+            android:text="a."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:textSize="@dimen/sp15"
+            android:text="An applicant who has completed sixteen years of age is eligible to apply for a driving licence to drive a motor cycle with engine capacity below 55 cc subject to the condition that the parent or guardian should furnish a declaration in the manner prescribed."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp15"
+                android:textSize="@dimen/sp15"
+                android:text="b."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp15"
+                android:text="The applicant who has completed the age of eighteen years of age is eligible to apply for a driving licence to drive a motor vehicle other than a transport vehicle."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp15"
+                android:textSize="@dimen/sp15"
+                android:text="c."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp15"
+                android:text="An applicant who has completed twenty years of age will be eligible for applying for a licence to drive a transport vehicle."/>
+        </LinearLayout>
+
+
+       </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

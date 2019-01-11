@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dd"
+    android:background="@drawable/image"
     tools:context=".Signinactivity">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgrect">
+        android:background="#6eb2e2d8">
 
 
 
@@ -25,7 +25,7 @@
             android:layout_width="80dp"
             android:layout_height="85dp"
             android:textColor="#efefef"
-            android:background="@drawable/car_frontsidewhitcolor"
+            android:background="@drawable/goblogo"
             android:layout_marginTop="50dp"
             android:layout_centerHorizontal="true"/>
 
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:background="@drawable/rect1"
                 android:layout_marginTop="200dp"
-                android:hint="Email"
+                android:hint="UserName"
                 android:textColorHint="#cfcfcf"
                 android:paddingLeft="20dp"
                 android:drawableLeft="@drawable/email"
@@ -69,6 +69,7 @@
             <EditText
                 android:textColor="#fff"
                 android:id="@+id/pass2"
+                android:inputType="textPassword"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:background="@drawable/rect1"
@@ -84,6 +85,7 @@
             <EditText
                 android:textColor="#fff"
                 android:id="@+id/pass3"
+                android:inputType="textPassword"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:background="@drawable/rect1"

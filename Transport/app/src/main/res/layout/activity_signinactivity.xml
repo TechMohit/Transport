@@ -79,6 +79,7 @@
 
                 <EditText
                     android:id="@+id/et_pswd"
+                    android:inputType="textPassword"
                     style="@style/edittext_normal"
                     android:hint="@string/password" />
             </android.support.design.widget.TextInputLayout>

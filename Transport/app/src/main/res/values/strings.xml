@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Transport</string>
+    <string name="app_name"> Bihar Transport</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,4 +8,9 @@
     <string name="forgotpswd">Forgot Password ?</string>
     <string name="dialog_title">Would you like to logout?</string>
     <string name="dialog_text">Would you like to logout?</string>
+    <string name="content">"No person shall drive a motor vehicle in any public place unless he holds an effective driving licence issued to him by the Licensing Authority, authorising him to drive the vehicle."</string>
+    <string name="La_content">The Joint Commissioner/ Deputy Commissioner and the District Transport Officers are the Licensing Authorities. The Administrative Officers and Motor Vehicle Inspectors are the Additional Licensing Authorities.</string>
+    <string name="Per_content">The Facility of online slot booking for test of completence of driving licence has been provided.Please visit the website for scheduling an appointment.</string>
+    <string name="Renew_content">An application for renewal shall be entertained not more than one month before the date of expiry of the licence. If the application is late for more than five years after the date of expiry of the licence, the applicant should undergo all the formalities to obtain a fresh licence.</string>
+    <string name="intdrpermit_content">International Driving Permit will be issued to an applicant who holds a valid Indian Licence and who is a resident of India. The application shall be made in Form IDP or in writing to the RTO within whose jurisdiction the applicant resides, specifying the countries to be visited and the duration of stay etc. </string>
 </resources>

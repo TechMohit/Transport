@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Recyclerviewadapter adapter;
     private Recyclerviewrcadapter rcadapter;
     private Recyclerviewdladapter dladapter;
-    TextView signintv;
+    TextView signintv,dlclick,rcclick;
     View hview;
     ImageView img_background;
     RelativeLayout tenrules;
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
+        dlclick = findViewById(R.id.dlclick);
+        rcclick = findViewById(R.id.rcclick);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -85,14 +87,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         signintv =  hview.findViewById(R.id.tvsignin);
 
-        signintv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this,Signinactivity.class);
-                startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE);
-            }
-        });
+
+            signintv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if(Constant.SIGNIN){
+
+                        Toast.makeText(getApplicationContext(),"You are already Login",Toast.LENGTH_LONG).show();
+                    }
+                    else {
+
+                        Intent intent = new Intent(MainActivity.this, Signinactivity.class);
+                        startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE);
+                    }
+                }
+            });
+
 
       tenrules = findViewById(R.id.wheelid);
 
@@ -102,6 +114,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
               Intent i = new Intent(MainActivity.this,IntroActivity.class);
               startActivity(i);
 
+          }
+      });
+      dlclick.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              ed_searchview.setHint("Enter DL number ");
+          }
+      });
+      rcclick.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              ed_searchview.setHint("Enter Vehicle number ");
           }
       });
 
@@ -171,7 +195,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(requestCode == SECOND_ACTIVITY_REQUEST_CODE)
         {
           if(resultCode ==RESULT_OK){
-              String name = "test";
+
+
+              String name = "";
                name = data.getStringExtra("KeyName");
                signintv.setText(name);
                nav_Menu.findItem(R.id.rcdashboard).setVisible(true);
@@ -273,6 +299,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         listrc.add(new Modelsrc("Permanent Reg",R.drawable.globe));
         listrc.add(new Modelsrc("Renewal Of Reg",R.drawable.id_card__2_));
         listrc.add(new Modelsrc("Duplicate Rc",R.drawable.id_card__3_));
+        listrc.add(new Modelsrc("No Objection Certificate",R.drawable.ic_insert_drive_file_black_24dp));
+        listrc.add(new Modelsrc("HP Endorsement",R.drawable.id_card__5_));
+        listrc.add(new Modelsrc("HP Termination",R.drawable.ic_assignment_black_24dp));
+        listrc.add(new Modelsrc("Address Change",R.drawable.id_card__3_));
+        listrc.add(new Modelsrc("Reassinment ",R.drawable.id_card__1_));
+        listrc.add(new Modelsrc("Trade Certificate",R.drawable.id_card__2_));
+        listrc.add(new Modelsrc("Certificate issues",R.drawable.id_card__3_));
+        listrc.add(new Modelsrc("Ownership Transfer",R.drawable.ic_insert_drive_file_black_24dp));
+        listrc.add(new Modelsrc("Diplomatic Vehicles",R.drawable.id_card__5_));
 
         return listrc;
     }
@@ -284,6 +319,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         listdl.add(new Modelsdl("Permanent DL",R.drawable.id_card__5_));
         listdl.add(new Modelsdl("Renewal Of DL",R.drawable.id_card__2_));
         listdl.add(new Modelsdl("Duplicate DL",R.drawable.id_card__3_));
+        listdl.add(new Modelsdl("Addition Of Class",R.drawable.ic_assignment_black_24dp));
+        listdl.add(new Modelsdl("International DP",R.drawable.id_card__3_));
 
         return listdl;
     }
@@ -300,6 +337,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 signintv.setText("Sign In");
+                Constant.SIGNIN =false;
                 nav_Menu.findItem(R.id.rcdashboard).setVisible(false);
                 nav_Menu.findItem(R.id.dldashboard).setVisible(false);
                 nav_Menu.findItem(R.id.MISReports).setVisible(false);
